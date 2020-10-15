@@ -7,6 +7,7 @@ namespace Personas
 {
     public class Persona
     {
+        public tipoPersona tipo { get; set; } 
         public string nombre { get; set; }
 
         public string apellido { get; set; }
@@ -38,5 +39,16 @@ namespace Personas
             //busco por nombre
         }
 
+    }
+
+
+
+    public enum tipoPersona
+    {
+        bebe= 0,
+        niño= 1,
+        adolecente= 2,
+        audlto= 3,
+        anciano= 4,
     }
 }
